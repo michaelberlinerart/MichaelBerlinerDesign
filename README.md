@@ -1,2 +1,2 @@
-# MichaelBerlinerDesign.github.io
+# michaelberlinerart.github.io
 Design and Photo Website
