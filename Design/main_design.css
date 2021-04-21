@@ -1,19 +1,19 @@
 html{
-background-color: #f8f0ff;
+background-color: ghostwhite;
 margin: -7;    
 }
 
-#header{
-font-size: 40px;
-color: #f8f0ff;
-background-color: #1a0030; 
+#header{    
+font-size: 29px;
+color: black; 
+border-bottom: 5px solid black;   
 margin: -8px; 
 margin-top: -16px;
-margin-bottom: 8px;    
+margin-bottom: 0px;    
 padding-left: 45px; 
 padding-right:25px;
 padding-top:14px;
-padding-bottom: 25px;    
+padding-bottom: 20px;    
 font-family: 'Righteous', cursive; 
 letter-spacing: 4px;    
 }
@@ -21,11 +21,11 @@ letter-spacing: 4px;
 font-family: 'Poppins', sans-serif;
 font-size: 15px; 
 margin-top: -25px;
-padding-bottom: 25px;    
+padding-bottom: 4px;    
 }
 .dropbtn {
- background-color: #f8f0ff;      
-  color: #1a0030;
+ background-color: ghostwhite;      
+  color: black;
   padding: 17px;
   font-size: 15px;
   border: none;
@@ -50,7 +50,7 @@ padding-bottom: 25px;
   float: left;    
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: ghostwhite;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -63,56 +63,16 @@ padding-bottom: 25px;
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #f8f0ff;}
+.dropdown-content a:hover {background-color: ghostwhite;}
 
 .dropdown:hover .dropdown-content {display: block;
 letter-spacing: 2px; 
     font-family: 'Poppins', sans-serif;
-    color: #1a0030;
+    color: black;
     font-size: 10px;
-    background-color: #f8f0ff;
+    background-color: ghostwhite;
 }
 
-.dropdown:hover .dropbtn {background-color: #1a0030;
-color: #f8f0ff;
+.dropdown:hover .dropbtn {background-color: black;
+color: ghostwhite;
 }
-
-#photos {
-  line-height: 0;
-  -webkit-column-count: 4;
-  -webkit-column-gap: 20px;    
-  -moz-column-count: 4;
-  -moz-column-gap: 20px;   
-  column-count: 4;
-  column-gap: 20px;
-    padding: 10px; 
-}
-
-#photos img {
-  width: 100% !important;
-  height: auto !important;
-  margin-bottom: 20px; !important;    
-}
-@media (max-width: 1200px) {
-  #photos {
-  -moz-column-count:    3;
-  -webkit-column-count: 3;
-  column-count:         3;
-  }
-}
-@media (max-width: 1000px) {
-  #photos {
-  -moz-column-count:    2;
-  -webkit-column-count: 2;
-  column-count:         2;
-  }
-}
-@media (max-width: 800px) {
-  #photos {
-  -moz-column-count:    1;
-  -webkit-column-count: 1;
-  column-count:         1;
-  }
-}
-
-
