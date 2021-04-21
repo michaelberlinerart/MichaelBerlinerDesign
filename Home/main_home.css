@@ -1,19 +1,19 @@
 html{
-background-color: #f8f0ff;
+background-color: ghostwhite;
 margin: -7;    
 }
 
-#header{
-font-size: 40px;
-color: #f8f0ff;
-background-color: #1a0030; 
+#header{    
+font-size: 29px;
+color: black; 
+border-bottom: 5px solid black;   
 margin: -8px; 
 margin-top: -16px;
-margin-bottom: 8px;    
+margin-bottom: 0px;    
 padding-left: 45px; 
 padding-right:25px;
 padding-top:14px;
-padding-bottom: 25px;    
+padding-bottom: 20px;    
 font-family: 'Righteous', cursive; 
 letter-spacing: 4px;    
 }
@@ -21,7 +21,7 @@ letter-spacing: 4px;
 font-family: 'Poppins', sans-serif;
 font-size: 15px; 
 margin-top: -25px;
-padding-bottom: 25px;    
+padding-bottom: 4px;    
 }
 .coverImage{
    width: 100vw;
@@ -38,38 +38,46 @@ padding-bottom: 25px;
     font-family: 'Righteous', cursive;
     color: #1a0030; 
 }
-.self{
-    display: inline-block;
-    float: left;
-    width: 22vw;
-    margin-left: 90px;
-    margin-top: 110px;
-    margin-bottom: 110px;
-    margin-right: 25px;
-}
+
 .bodyText{
     display: block;
-    margin-top: 1px;
-    margin-left: 33vw;
-    margin-right: 3vw;
+    margin-top: 20vw;
+    margin-left: 0px;
+    margin-right: 15vw;
     font-size: 1.5vw;
     letter-spacing: 2px; 
     font-family: 'Poppins', sans-serif;
-    color: #1a0030; 
+    color: ghostwhite; 
     padding-right: 4vw;
+    z-index: -1;
+    float: right;
+}
+.bodyText2{
+    display: block;
+    margin-top: 20vw;
+    margin-left: 14.6vw;
+    margin-right: 0px;
+    font-size: 1.5vw;
+    letter-spacing: 2px; 
+    font-family: 'Poppins', sans-serif;
+    color: ghostwhite; 
+    padding-right: 4vw;
+    z-index: -1;
+    float: left;
 }
 .aboutMe{
-    display: block;
+    display: inline-block;
+    border-bottom: 5px solid black; 
     font-size: 4vw;
     letter-spacing: 2px; 
     font-family: 'Righteous', cursive;
     color: #1a0030; 
-    margin-left: 33vw;
+    margin-left: 3.6vw;
     margin-top: 110px;
 }
 .dropbtn {
- background-color: #f8f0ff;      
-  color: #1a0030;
+ background-color: ghostwhite;      
+  color: black;
   padding: 17px;
   font-size: 15px;
   border: none;
@@ -94,7 +102,7 @@ padding-bottom: 25px;
   float: left;    
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: ghostwhite;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -107,19 +115,89 @@ padding-bottom: 25px;
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #f8f0ff;}
+.dropdown-content a:hover {background-color: ghostwhite;}
 
 .dropdown:hover .dropdown-content {display: block;
 letter-spacing: 2px; 
     font-family: 'Poppins', sans-serif;
-    color: #1a0030;
+    color: black;
     font-size: 10px;
-    background-color: #f8f0ff;
+    background-color: ghostwhite;
 }
 
-.dropdown:hover .dropbtn {background-color: #1a0030;
-color: #f8f0ff;
+.dropdown:hover .dropbtn {background-color: black;
+color: ghostwhite;
+}
+#numberSystem1{
+    font-size: 20vw;
+    z-index: 1;
+    margin-right: 5.5vw;
+    font-family: 'Righteous', cursive;
+    float: right;
+}
+#numberSystem2{
+   display: inline-block;
+    font-size: 20vw;
+    z-index: 1;
+    margin-left: 4vw;
+    margin-top: 0px;
+    font-family: 'Righteous', cursive;
+    float: left;
+    
+}
+.self{
+    display: inline-block;
+    float: left;
+    width: 50vw;
+    margin-left: -8px;
+    margin-top: 0px;
+    margin-bottom: 110px;
+    margin-right: 0px;
+    z-index: -1;
+}
+.self2{
+    display: inline-block;
+    float: right;
+    width: 50vw;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 110px;
+    margin-right: -8px;
+    z-index: -1;
+}
+#numberSystem3{
+   font-size: 20vw;
+    z-index: 1;
+    margin-right: 2.1vw;
+    font-family: 'Righteous', cursive;
+    float: right;
+}
+#numberSystem4{
+   display: inline-block;
+    font-size: 20vw;
+    z-index: 1;
+    margin-right: 4.5vw;
+    margin-top: 0px;
+    font-family: 'Righteous', cursive;
+    float: left;
+    
 }
 
+#overall1{
+    display: inline-block;
+    float: right;
+}
+img {
+  opacity: 1.0;
+}
 
+img:hover {
+  opacity: 0.5;
+}
+.bodyText:hover{
+    color: black;
+}
+.bodyText2:hover{
+    color:black;
+}
 
