@@ -121,3 +121,44 @@ letter-spacing: 2px;
 .dropdown:hover .dropbtn {background-color: black;
 color: ghostwhite;
 }
+.aboutMeTwo{
+    display: inline-block;
+    border-bottom: 5px solid black; 
+    font-size: 2vw;
+    letter-spacing: 2px; 
+    font-family: 'Righteous', cursive;
+    color: black; 
+    margin-left: 90px;
+    margin-top: 0px;
+}
+.aboutMeThree{
+    display: inline-block; 
+    font-size: 1.5vw;
+    letter-spacing: 2px; 
+    font-family: 'Poppins', sans-serif;
+    color: black; 
+    margin-left: 20px;
+    margin-top: 0px;
+}
+.aaboutMeTwo{
+    display: inline-block;
+    border-bottom: 5px solid black; 
+    font-size: 2vw;
+    letter-spacing: 2px; 
+    font-family: 'Righteous', cursive;
+    color: black; 
+    margin-left: 90px;
+    margin-top: 0px;
+    float: right;
+}
+.aaboutMeThree{
+    display: inline-block; 
+    font-size: 1.5vw;
+    letter-spacing: 2px; 
+    font-family: 'Poppins', sans-serif;
+    color: black; 
+    margin-left: 20px;
+    margin-top: 6px;
+    margin-right: 90px;
+    float: right;
+}
