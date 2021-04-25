@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Berliner Design</title>
+        <link rel="stylesheet" href="main_Beyonce.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    </head>
+    
+    <body> 
+       
+   <div id="header"> 
+   <p>Michael Berliner</p> 
+    <p class="subHead">Design and Photography </p>   
+   </div>
+     <div class="dropdown">
+  <button class="dropbtn">Works</button>
+  <div class="dropdown-content" style="right: 0;">
+      <a href="../../Home/index_home.html">Home</a>
+    <a href="../../Design/index_design.html">Design</a>
+    <a href="../../Photography/index_photo.html">Photography</a>
+ 
+    <a href="../../Contact/index_contact.html">Contact</a>
+  </div>
+</div> 
+        
+        
+        
+        
+        
+        
+<div class="slideshow-container">
+
+   <div class="mySlides fade">
+    <div class="numbertext">1 / 7</div>
+    <img src="CoverPhoto.jpg" style="width:100%">
+    
+  </div>
+    
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 7</div>
+    <img src="2008_1.png" style="width:100%">
+    
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 7</div>
+    <img src="2008_2.png" style="width:100%">
+    
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 7</div>
+    <img src="2008_3.png" style="width:100%">
+    
+  </div>
+    
+<div class="mySlides fade">
+    <div class="numbertext">5 / 7</div>
+    <img src="2013_1.png" style="width:100%">
+    
+  </div>
+    
+    <div class="mySlides fade">
+    <div class="numbertext">6 / 7</div>
+    <img src="2013_2.png" style="width:100%">
+    
+  </div>
+    <div class="mySlides fade">
+    <div class="numbertext">7 / 7</div>
+    <img src="2013_3.png" style="width:100%">
+    </div>
+    
+
+<div>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    
+    
+</div>
+<br>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script> 
+        
+        <div id="overall">
+<a id="Title"> Beyvolution </a>  
+<a id="Description"> Inspired by Beyonce throughout her years of being a worldwide sensation. This book explores her clothing in different events and more specifically, their material qualities and colors.    </a>    
+</div> 
+        
+       
+        
+        
+      
+   
+        
+    </body>
+    </html>
