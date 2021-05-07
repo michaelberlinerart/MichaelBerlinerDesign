@@ -24,50 +24,75 @@
   </div>
 </div>
         
-    <section id="photos" style="margin: 40px;">
-  <img src="1.jpeg"alt="BerlinerImage">
-  <img src="2.jpeg"alt="BerlinerImage">
-  <img src="3.jpg"alt="BerlinerImage">
-  <img src="4.jpg"alt="BerlinerImage">
-  <img src="5.jpg"alt="BerlinerImage">
-  <img src="6.jpg"alt="BerlinerImage">
-  <img src="7.jpg"alt="BerlinerImage">
-  <img src="8.jpg"alt="BerlinerImage">
-  <img src="9.jpg"alt="BerlinerImage">
-  <img src="10.jpg"alt="BerlinerImage">
-  <img src="11.jpeg"alt="BerlinerImage">
-  <img src="12.jpg"alt="BerlinerImage">
-  <img src="13.jpg"alt="BerlinerImage">
-  <img src="14.jpg"alt="BerlinerImage">
-  <img src="15.jpg"alt="BerlinerImage">
-  <img src="16.jpg"alt="BerlinerImage">
-  <img src="17.jpg"alt="BerlinerImage">
-  <img src="18.jpg"alt="BerlinerImage">
-  <img src="19.jpg"alt="BerlinerImage">
-  <img src="20.jpg"alt="BerlinerImage">
-  <img src="21.jpg"alt="BerlinerImage">
-  <img src="22.jpeg"alt="BerlinerImage">
-  <img src="23.jpeg"alt="BerlinerImage">
-  <img src="24.jpeg"alt="BerlinerImage">
-  <img src="25.jpg"alt="BerlinerImage">
-  <img src="26.jpeg"alt="BerlinerImage">
-  <img src="27.jpeg"alt="BerlinerImage">
-  <img src="28.jpeg"alt="BerlinerImage">
-  <img src="29.JPG"alt="BerlinerImage">
-  <img src="30.jpg"alt="BerlinerImage">
-  <img src="31.JPG"alt="BerlinerImage">
-  <img src="32.jpg"alt="BerlinerImage">
-  <img src="33.jpg"alt="BerlinerImage">
-  <img src="34.JPG"alt="BerlinerImage">
-  <img src="35.jpg"alt="BerlinerImage">
-  <img src="36.jpg"alt="BerlinerImage">
-  <img src="37.JPG"alt="BerlinerImage">
-  <img src="38.jpg"alt="BerlinerImage">
-  <img src="39.JPG"alt="BerlinerImage">
-  <img src="40.JPG"alt="BerlinerImage">
-  <img src="41.jpg"alt="BerlinerImage">
-  <img src="42.jpg"alt="BerlinerImage">
+    <section class="photos" style="margin: 40px;">
+  <img class="myImg" src="1.jpeg"alt="BerlinerImage">
+  <img class="myImg"src="2.jpeg"alt="BerlinerImage">
+  <img class="myImg"src="3.jpg"alt="BerlinerImage">
+  <img class="myImg"src="4.jpg"alt="BerlinerImage">
+  <img class="myImg"src="5.jpg"alt="BerlinerImage">
+  <img class="myImg"src="6.jpg"alt="BerlinerImage">
+  <img class="myImg"src="7.jpg"alt="BerlinerImage">
+  <img class="myImg"src="8.jpg"alt="BerlinerImage">
+  <img id="myImg"src="9.jpg"alt="BerlinerImage">
+  <img id="myImg"src="10.jpg"alt="BerlinerImage">
+  <img id="myImg"src="11.jpeg"alt="BerlinerImage">
+  <img id="myImg"src="12.jpg"alt="BerlinerImage">
+  <img id="myImg"src="13.jpg"alt="BerlinerImage">
+  <img id="myImg"src="14.jpg"alt="BerlinerImage">
+  <img id="myImg"src="15.jpg"alt="BerlinerImage">
+  <img id="myImg"src="16.jpg"alt="BerlinerImage">
+  <img id="myImg"src="17.jpg"alt="BerlinerImage">
+  <img id="myImg"src="18.jpg"alt="BerlinerImage">
+  <img id="myImg"src="19.jpg"alt="BerlinerImage">
+  <img id="myImg"src="20.jpg"alt="BerlinerImage">
+  <img id="myImg"src="21.jpg"alt="BerlinerImage">
+  <img id="myImg"src="22.jpeg"alt="BerlinerImage">
+  <img class="myImg"src="23.jpeg"alt="BerlinerImage">
+  <img class="myImg"src="24.jpeg"alt="BerlinerImage">
+  <img class="myImg"src="25.jpg"alt="BerlinerImage">
+  <img class="myImg"src="26.jpeg"alt="BerlinerImage">
+  <img class="myImg"src="27.jpeg"alt="BerlinerImage">
+  <img class="myImg"src="28.jpeg"alt="BerlinerImage">
+  <img class="myImg"src="29.JPG"alt="BerlinerImage">
+  <img class="myImg"src="30.jpg"alt="BerlinerImage">
+  <img class="myImg"src="31.JPG"alt="BerlinerImage">
+  <img class="myImg"src="32.jpg"alt="BerlinerImage">
+  <img class="myImg"src="33.jpg"alt="BerlinerImage">
+  <img class="myImg"src="34.JPG"alt="BerlinerImage">
+  <img class="myImg"src="35.jpg"alt="BerlinerImage">
+  <img class="myImg"src="36.jpg"alt="BerlinerImage">
+  <img class="myImg"src="37.JPG"alt="BerlinerImage">
+  <img class="myImg"src="38.jpg"alt="BerlinerImage">
+  <img class="myImg"src="39.JPG"alt="BerlinerImage">
+  <img class="myImg"src="40.JPG"alt="BerlinerImage">
+  <img class="myImg"src="41.jpg"alt="BerlinerImage">
+  <img class="myImg"src="42.jpg"alt="BerlinerImage">
 </section> 
+        
+  <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+  </div>
+        
+    <script>
+        var modal = document.getElementById("myModal");
+
+var img = document.getElementByClassName("myImg");
+var modalImg = document.getElementByClassName("img01");
+var captionText = document.getElementByClassName("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+        </script>
         
             
     </body>    
